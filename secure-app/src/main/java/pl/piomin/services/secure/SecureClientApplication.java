@@ -19,9 +19,9 @@ public class SecureClientApplication {
 	@Bean
 	public DiscoveryClient.DiscoveryClientOptionalArgs discoveryClientOptionalArgs() throws NoSuchAlgorithmException {
 		DiscoveryClient.DiscoveryClientOptionalArgs args = new DiscoveryClient.DiscoveryClientOptionalArgs();
-		System.setProperty("javax.net.ssl.keyStore", "src/main/resources/client.jks");
+		System.setProperty("javax.net.ssl.keyStore", "C:\\Users\\Sparda3k\\intellij\\service-discovery-demo\\sample-secure-eureka-discovery\\secure-app\\src\\main\\resources\\client.jks");
 		System.setProperty("javax.net.ssl.keyStorePassword", "123456");
-		System.setProperty("javax.net.ssl.trustStore", "src/main/resources/client.jks");
+		System.setProperty("javax.net.ssl.trustStore", "C:\\Users\\Sparda3k\\intellij\\service-discovery-demo\\sample-secure-eureka-discovery\\secure-app\\src\\main\\resources\\client.jks");
 		System.setProperty("javax.net.ssl.trustStorePassword", "123456");
 		EurekaJerseyClientBuilder builder = new EurekaJerseyClientBuilder();
 		builder.withClientName("client");
